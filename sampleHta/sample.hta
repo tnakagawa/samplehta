@@ -1,0 +1,32 @@
+<HTML>
+<HEAD>
+<HTA:APPLICATION
+    ID="oHTA"            /* 要変更                                                    */
+    APPLICATIONNAME="HTA_APPLICATIONNAME" /* 要変更                                   */
+    BORDER="thick"       /* リサイズ禁止なら"thin" 表示なしなら"none"                 */
+    CAPTION="yes"        /* タイトルバーの非表示なら"no"                              */
+    CONTEXTMENU="no"     /* 右クリック可能なら"yes"                                   */
+    /* ICON="パス" アイコンある場合はパス記述                                         */
+    INNERBORDER="yes"    /* ３Ｄにしたくない場合は"no"                                */
+    MAXIMIZEBUTTON="no"  /* 最大化を有効にしたいならば"yes"                           */
+    MINIMIZEBUTTON="no"  /* 最小化を有効にしたいならば"yes"                           */
+    NAVIGABLE="no"       /* 内部でリンク先を開きたい場合は"yes"                       */
+    SCROLL="yes"         /* スクロールバーを表示したくないならば"no"                  */
+    SCROLLFLAT="no"      /* スクロールバーをフラットにしたいならば"yes"               */
+    SELECTION="yes"      /* 内部を選択させたくないならば"no"                          */
+    SHOWINTASKBAR="yes"  /* タスクバーに出したくないならば"no"                        */
+    SINGLEINSTANCE="yes" /* 多重起動したいならば"no"                                  */
+    SYSMENU="yes"        /* システムメニューを出したくないならば"no"                  */
+    VERSION="1.0"        /* 要変更                                                    */
+    WINDOWSTATE="normal" /* 最初の表示が最大化ならば"maximize" 最小化ならば"minimize" */
+/>
+<script><!--
+    function init(){
+        window.resizeTo(600,400);
+    }
+//--></script>
+</HEAD>
+<BODY onload="javascript:init();">
+<button onclick="javascript:window.close();">close</button>
+</BODY>
+</HTML>
